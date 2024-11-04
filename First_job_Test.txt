@@ -1,0 +1,19 @@
+Started by user Yogesh Vattigunta
+Running as SYSTEM
+Building in workspace C:\ProgramData\Jenkins\.jenkins\workspace\my_first_job
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+[my_first_job] $ cmd /c call C:\Windows\TEMP\jenkins8559446890641586127.bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\my_first_job>mkdir yogesh 
+
+C:\ProgramData\Jenkins\.jenkins\workspace\my_first_job>cd yogesh 
+
+C:\ProgramData\Jenkins\.jenkins\workspace\my_first_job\yogesh>echo pwd 
+pwd
+
+C:\ProgramData\Jenkins\.jenkins\workspace\my_first_job\yogesh>echo 1234  1>C:\ProgramData\Jenkins\.jenkins\workspace\my_first_job\yogesh\text.txt 
+
+C:\ProgramData\Jenkins\.jenkins\workspace\my_first_job\yogesh>exit 0 
+Finished: SUCCESS

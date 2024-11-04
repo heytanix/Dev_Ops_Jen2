@@ -1,0 +1,10 @@
+Started by user Yogesh Vattigunta
+Running as SYSTEM
+Building in workspace C:\ProgramData\Jenkins\.jenkins\workspace\sample_test_job_1
+[sample_test_job_1] $ cmd /c call C:\Windows\TEMP\jenkins4034463329706673415.bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\sample_test_job_1>echo " Testing Done " 
+" Testing Done "
+
+C:\ProgramData\Jenkins\.jenkins\workspace\sample_test_job_1>exit 0 
+Finished: SUCCESS

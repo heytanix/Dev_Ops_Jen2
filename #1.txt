@@ -1,0 +1,61 @@
+Started by user Yogesh Vattigunta
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on Jenkins in C:\ProgramData\Jenkins\.jenkins\workspace\sort
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (checkout)
+[Pipeline] checkout
+The recommended git tool is: NONE
+using credential 76981475-27ad-41f3-95fe-61c9dd81d5d1
+Cloning the remote Git repository
+Cloning repository https://github.com/YogeshVattigunta/sort.git
+ > git.exe init C:\ProgramData\Jenkins\.jenkins\workspace\sort # timeout=10
+Fetching upstream changes from https://github.com/YogeshVattigunta/sort.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.45.2.windows.1'
+using GIT_ASKPASS to set credentials 
+ > git.exe fetch --tags --force --progress -- https://github.com/YogeshVattigunta/sort.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/YogeshVattigunta/sort.git # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git.exe rev-parse "origin/main^{commit}" # timeout=10
+Checking out Revision e535262a330eabb09b0834f2b8fea5001a1ee0ae (origin/main)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f e535262a330eabb09b0834f2b8fea5001a1ee0ae # timeout=10
+Commit message: "Add files via upload"
+First time build. Skipping changelog.
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Build)
+[Pipeline] git
+The recommended git tool is: NONE
+using credential 76981475-27ad-41f3-95fe-61c9dd81d5d1
+ > git.exe rev-parse --resolve-git-dir C:\ProgramData\Jenkins\.jenkins\workspace\sort\.git # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/YogeshVattigunta/sort.git # timeout=10
+Fetching upstream changes from https://github.com/YogeshVattigunta/sort.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.45.2.windows.1'
+using GIT_ASKPASS to set credentials 
+ > git.exe fetch --tags --force --progress -- https://github.com/YogeshVattigunta/sort.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/main^{commit}" # timeout=10
+Checking out Revision e535262a330eabb09b0834f2b8fea5001a1ee0ae (refs/remotes/origin/main)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f e535262a330eabb09b0834f2b8fea5001a1ee0ae # timeout=10
+ > git.exe branch -a -v --no-abbrev # timeout=10
+ > git.exe checkout -b main e535262a330eabb09b0834f2b8fea5001a1ee0ae # timeout=10
+Commit message: "Add files via upload"
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Test)
+[Pipeline] echo
+Testing Done
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS
